@@ -27,7 +27,7 @@
       <a href="https://docs.google.com/document/d/1ir8SvS5nRkqqmNVjc89yIUP9iaWw9f9nKX_5S4yIMu8/pub">
 	      <h5> Changelog</h5></a>
   <br>
-	  <input onkeydown=""if (event.keyCode == 13 || event.which == 13){STI()} placeholder="Search Google">
+	  <input id="input" onkeydown=""if (event.keyCode == 13 || event.which == 13){STI()} placeholder="Search Google">
          
         
         <br><br>
@@ -114,7 +114,10 @@
 
 	}</style>
 	  <script>
-	  function ST
+	  function STI(){
+			var input = encodeURIComponent(document.getElementById('input').value);
+        window.location.assign('https://www.google.com/maps/search/' + input)
+		}
 	  </script>
 	  
 </body>
