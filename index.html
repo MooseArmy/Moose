@@ -25,10 +25,18 @@
       </p>
       
       <a href="https://docs.google.com/document/d/1ir8SvS5nRkqqmNVjc89yIUP9iaWw9f9nKX_5S4yIMu8/pub">
+
+	      <h5> Changelog</h5></a>
+  <br>
+	  <input id="input" onkeydown=""if (event.keyCode == 13 || event.which == 13){STI()} placeholder="Search Google">
+         
+        
+
     <h5> Changelog</h5>
 	  </a>
   <br>
 	    
+
         <br><br>
       <a href="https://myaccount.google.com"> 
       <img  src="mijnacc.jpg" alt="Google mijn account">
@@ -114,8 +122,14 @@
   .INTEL {
     height:
 
-  }
-
+	}</style>
+	  <script>
+	  function STI(){
+			var input = encodeURIComponent(document.getElementById('input').value);
+        window.location.assign('https://www.google.com/maps/search/' + input)
+		}
+	  </script>
+	  
 </body>
 </html>
 
